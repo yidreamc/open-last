@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "open-last",
+  "description": "打开浏览器上次浏览的位置",
+  "version": "1.0",
+  "icons": {
+    "16": "icon16.png",
+    "128": "icon128.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "icon16.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "<all_urls>"
+  ]
+}
